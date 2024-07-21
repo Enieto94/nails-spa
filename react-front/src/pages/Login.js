@@ -69,6 +69,9 @@ class Login extends Component {
             <div className='containerPrincipal'>
                 <div className='containerSecundario'>
                     <div className="form-group">
+                        <div>
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
                         <label>Usuario: </label> <br />
                         <input type="text" className='form-control' name='username' onChange={this.handleChange} />
                         <br />
