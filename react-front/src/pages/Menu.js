@@ -26,7 +26,7 @@ class Menu extends Component {
         // console.log('username: ' + cookies.get('username'));
 
         return (
-            <div>
+            <div id='menu'>
                 <i class="fa fa-bars"></i>
                 <br />
                 <button onClick={() => this.cerrarSesion()}>

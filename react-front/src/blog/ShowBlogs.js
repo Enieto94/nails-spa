@@ -23,11 +23,11 @@ const CompShowBlogs = () => {
     }
 
     return (
-        <div className='container'>
+        <div >
             <Menu />
-            <div className='row'>
-                <div className='col'>
-                    <Link to="/crear" className='btn btn-primary mt-2 mb-2'><i class="fas fa-plus"></i></Link>
+            <div className='containerPrincipal'>
+                <div className='containerSecundario'>
+                    <Link to="/crear" className='btn btn-primary mt-2 mb-2'><i class="fas fa-plus"></i> Agregar Post</Link>
                     <div className='table'>
                         <thead className='table-primary'>
                             <tr>

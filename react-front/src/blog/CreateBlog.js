@@ -20,34 +20,38 @@ const CompCreateBlog = () => {
     return (
         <div>
             <Menu />
-            <h1>Vista CREAR</h1>
-            <form onSubmit={store}>
-                <div className="mb-3">
-                    <label className='form-label'>
-                        Title
-                    </label>
-                    <input
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        type="text"
-                        className="form-control"
-                    />
+            <div className="containerPrincipal">
+                <div className="containerSecundario">
+                    <h1>Vista CREAR</h1>
+                    <form onSubmit={store}>
+                        <div className="mb-3">
+                            <label className='form-label'>
+                                Title
+                            </label>
+                            <input
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
+                                type="text"
+                                className="form-control"
+                            />
 
-                </div>
-                <div className="mb-3">
-                    <label className='form-label'>
-                        Content
-                    </label>
-                    <input
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                        type="text"
-                        className="form-control"
-                    />
+                        </div>
+                        <div className="mb-3">
+                            <label className='form-label'>
+                                Content
+                            </label>
+                            <input
+                                value={content}
+                                onChange={(e) => setContent(e.target.value)}
+                                type="text"
+                                className="form-control"
+                            />
 
+                        </div>
+                        <button className='btn btn-primary' type="submit">AGREGAR</button>
+                    </form>
                 </div>
-                <button className='btn btn-primary' type="submit">AGREGAR</button>
-            </form>
+            </div>
         </div>
     )
 }

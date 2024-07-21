@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Login.css'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
@@ -34,34 +36,40 @@ const CompEditBlogs = () => {
     return (
         <div>
             <Menu />
-            <h1>Vista EDITAR</h1>
-            <form onSubmit={update}>
-                <div className="mb-3">
-                    <label className='form-label'>
-                        Title
-                    </label>
-                    <input
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        type="text"
-                        className="form-control"
-                    />
+            <div className='containerPrincipal'>
+                <div className='containerSecundario'>
+                    <h1>Vista EDITAR</h1>
+                    <form onSubmit={update}>
+                        <div className="mb-3">
+                            <label className='form-label'>
+                                Title
+                            </label>
+                            <input
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
+                                type="text"
+                                className="form-control"
+                            />
 
-                </div>
-                <div className="mb-3">
-                    <label className='form-label'>
-                        Contents
-                    </label>
-                    <input
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                        type="text"
-                        className="form-control"
-                    />
+                        </div>
+                        <div className="mb-3">
+                            <label className='form-label'>
+                                Contents
+                            </label>
+                            <input
+                                value={content}
+                                onChange={(e) => setContent(e.target.value)}
+                                type="text"
+                                className="form-control"
+                            />
 
+                        </div>
+                        <button className='btn btn-primary' type="submit">AGREGAR</button>
+                    </form>
                 </div>
-                <button className='btn btn-primary' type="submit">AGREGAR</button>
-            </form>
+            </div>
+
+
         </div>
     )
 }
