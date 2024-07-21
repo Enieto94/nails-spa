@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import '../css/Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
@@ -33,16 +34,16 @@ class Login extends Component {
                 return response.data
             })
             .then(response => {
-                // console.log(response.data);
+                console.log(response.data);
+                var respuesta = response[0];
 
                 if (response.length > 0) {
-                    var respuesta = response[0];
                     cookies.set('id', respuesta.id, { path: "/" });
                     cookies.set('apellido_paterno', respuesta.apellido_paterno, { path: "/" });
                     cookies.set('apellido_materno', respuesta.apellido_materno, { path: "/" });
                     cookies.set('nombre', respuesta.nombre, { path: "/" });
                     alert(`Bienvenido' ${respuesta.nombre} ${respuesta.apellido_materno}`);
-                    window.location.href = "./menu"
+                    window.location.href = "./blogs"
 
                 }
                 else {
@@ -59,7 +60,7 @@ class Login extends Component {
     componentDidMount() {
         if (cookies.get('username')) {
 
-            window.location.href = "./menu"
+            window.location.href = "./blogs"
         }
     }
 

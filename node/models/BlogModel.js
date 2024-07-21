@@ -1,11 +1,11 @@
 // Sequelize.define}
-import db from "../database/db";
+import db from "../database/db.js";
 // Importamos la conexión a db
 import { DataTypes } from "sequelize";
 
-db.define('blogs', {
+const BlogModel = db.define('blogs', {
     title: { type: DataTypes.STRING },
-    content: { type: DataTypes.STRING },
+    content: { type: DataTypes.STRING }
 })
 
 export default BlogModel

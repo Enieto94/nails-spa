@@ -15,7 +15,6 @@ class Menu extends Component {
 
     componentDidMount() {
         if (cookies.get('username')) {
-
             window.location.href = "./"
         }
     }
@@ -28,10 +27,10 @@ class Menu extends Component {
 
         return (
             <div>
-                Menu principal
+                <i class="fa fa-bars"></i>
                 <br />
                 <button onClick={() => this.cerrarSesion()}>
-                    Cerrar sesión
+                    <i class="fas fa-sign-out-alt"></i>
                 </button>
             </div>
         )
