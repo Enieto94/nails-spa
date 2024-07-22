@@ -41,11 +41,53 @@
 
 .btn.btn-primary,
 .btn.btn-info {
-    background-color: violet;
+    background-color: pink;
+    color: black
+}
+
+.btn-primary:hover {
+    background-color: blueviolet !important;
+}
+
+.btn-danger {
+    background-color: violet !important;
+}
+
+.btn-info:hover {
+    background-color: pink !important;
 }
 
 .fa-solid.fa-hand-sparkles {
     color: violet;
     font-size: 48px;
     margin: 40px auto;
+}
+
+td {
+    background-color: white !important;
+}
+
+thead tr th {
+    background-color: violet !important;
+    color: white !important;
+}
+
+tbody tr:nth-child(even) {
+    background: white !important;
+}
+
+tbody tr:nth-child(odd) {
+    background: gainsboro !important;
+}
+
+.btn-cerrar-sesion {
+    border: 0 !important;
+    outline: 0 !important;
+    background-color: white;
+
+}
+
+td i,
+button i {
+    color: black
 }

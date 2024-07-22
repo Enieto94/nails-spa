@@ -29,8 +29,8 @@ class Menu extends Component {
             <div id='menu'>
                 <i class="fa fa-bars"></i>
                 <br />
-                <button onClick={() => this.cerrarSesion()}>
-                    <i class="fas fa-sign-out-alt"></i>
+                <button className='btn-cerrar-sesion' onClick={() => this.cerrarSesion()}>
+                    <i className="fas fa-sign-out"></i>
                 </button>
             </div>
         )

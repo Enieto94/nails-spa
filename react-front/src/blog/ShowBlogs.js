@@ -18,6 +18,7 @@ const CompShowBlogs = () => {
         setBlog(res.data)
     }
     const deleteBlog = async (id) => {
+        getBlogs()
         axios.delete(`${URI}${id}`)
         getBlogs()
     }
