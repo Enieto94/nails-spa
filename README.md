@@ -21,4 +21,4 @@ npm i
 npm start
 
 
-nodemon index
+nodemon app
